@@ -1,0 +1,12 @@
+{
+  "domain": "magic_links",
+  "name": "Magic Links",
+  "version": "1.0.0",
+  "documentation": "https://github.com/andreadodo/magic_links",
+  "issue_tracker": "https://github.com/andreadodo/magic_links/issues",
+  "codeowners": ["@andreadodo"],
+  "dependencies": ["http", "websocket_api", "frontend", "panel_custom"],
+  "requirements": [],
+  "integration_type": "service",
+  "iot_class": "calculated"
+}
