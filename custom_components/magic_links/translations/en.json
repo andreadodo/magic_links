@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Magic Links",
+        "description": "Set how unauthenticated links behave. You can change everything later from “Configure”.",
+        "data": {
+          "external_url": "External URL",
+          "default_expiry": "Default expiry",
+          "confirm_page": "Confirmation page",
+          "max_fails": "Allowed failed attempts",
+          "fail_window": "Lockout window",
+          "show_sidebar": "Show in sidebar",
+          "sidebar_title": "Sidebar title"
+        },
+        "data_description": {
+          "external_url": "Public Home Assistant address used to build links (e.g. https://home.example.com). If empty, HA's external URL is used.",
+          "confirm_page": "Show a “Confirm” button before running. If disabled, opening the link runs the action immediately: WhatsApp/Telegram previews may trigger it by themselves.",
+          "max_fails": "After this many wrong tokens, the IP address is temporarily blocked.",
+          "fail_window": "Minutes over which failed attempts are counted.",
+          "show_sidebar": "If disabled, the dashboard stays reachable at /magic-links."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid URL (must start with http:// or https://)"
+    },
+    "abort": {
+      "single_instance_allowed": "Magic Links is already set up"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Magic Links",
+        "description": "Set how unauthenticated links behave. You can change everything later from “Configure”.",
+        "data": {
+          "external_url": "External URL",
+          "default_expiry": "Default expiry",
+          "confirm_page": "Confirmation page",
+          "max_fails": "Allowed failed attempts",
+          "fail_window": "Lockout window",
+          "show_sidebar": "Show in sidebar",
+          "sidebar_title": "Sidebar title"
+        },
+        "data_description": {
+          "external_url": "Public Home Assistant address used to build links (e.g. https://home.example.com). If empty, HA's external URL is used.",
+          "confirm_page": "Show a “Confirm” button before running. If disabled, opening the link runs the action immediately: WhatsApp/Telegram previews may trigger it by themselves.",
+          "max_fails": "After this many wrong tokens, the IP address is temporarily blocked.",
+          "fail_window": "Minutes over which failed attempts are counted.",
+          "show_sidebar": "If disabled, the dashboard stays reachable at /magic-links."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid URL (must start with http:// or https://)"
+    }
+  },
+  "selector": {
+    "default_expiry": {
+      "options": {
+        "24h": "24 hours",
+        "48h": "48 hours",
+        "never": "Always valid"
+      }
+    }
+  }
+}

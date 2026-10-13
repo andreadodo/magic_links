@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Magic Links",
+        "description": "Imposta il comportamento dei link senza autenticazione. Potrai cambiare tutto più tardi da «Configura».",
+        "data": {
+          "external_url": "URL esterno",
+          "default_expiry": "Scadenza predefinita",
+          "confirm_page": "Pagina di conferma",
+          "max_fails": "Tentativi errati consentiti",
+          "fail_window": "Finestra di blocco",
+          "show_sidebar": "Mostra nella barra laterale",
+          "sidebar_title": "Titolo nella barra laterale"
+        },
+        "data_description": {
+          "external_url": "Indirizzo pubblico di Home Assistant usato per costruire i link (es. https://casa.example.com). Se vuoto, usa l'URL esterno di HA.",
+          "confirm_page": "Mostra un pulsante «Conferma» prima di eseguire. Se disattivi, l'apertura del link lancia subito l'azione: le anteprime di WhatsApp/Telegram potrebbero farla partire da sole.",
+          "max_fails": "Dopo questo numero di token sbagliati, l'indirizzo IP viene bloccato temporaneamente.",
+          "fail_window": "Minuti in cui si contano i tentativi errati.",
+          "show_sidebar": "Se disattivato, la plancia resta raggiungibile da /magic-links."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL non valido (deve iniziare con http:// o https://)"
+    },
+    "abort": {
+      "single_instance_allowed": "È già configurata un'istanza di Magic Links"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Magic Links",
+        "description": "Imposta il comportamento dei link senza autenticazione. Potrai cambiare tutto più tardi da «Configura».",
+        "data": {
+          "external_url": "URL esterno",
+          "default_expiry": "Scadenza predefinita",
+          "confirm_page": "Pagina di conferma",
+          "max_fails": "Tentativi errati consentiti",
+          "fail_window": "Finestra di blocco",
+          "show_sidebar": "Mostra nella barra laterale",
+          "sidebar_title": "Titolo nella barra laterale"
+        },
+        "data_description": {
+          "external_url": "Indirizzo pubblico di Home Assistant usato per costruire i link (es. https://casa.example.com). Se vuoto, usa l'URL esterno di HA.",
+          "confirm_page": "Mostra un pulsante «Conferma» prima di eseguire. Se disattivi, l'apertura del link lancia subito l'azione: le anteprime di WhatsApp/Telegram potrebbero farla partire da sole.",
+          "max_fails": "Dopo questo numero di token sbagliati, l'indirizzo IP viene bloccato temporaneamente.",
+          "fail_window": "Minuti in cui si contano i tentativi errati.",
+          "show_sidebar": "Se disattivato, la plancia resta raggiungibile da /magic-links."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL non valido (deve iniziare con http:// o https://)"
+    }
+  },
+  "selector": {
+    "default_expiry": {
+      "options": {
+        "24h": "24 ore",
+        "48h": "48 ore",
+        "never": "Sempre valido"
+      }
+    }
+  }
+}
